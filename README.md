@@ -1,0 +1,3 @@
+This repository demonstrates a common issue in Dockerfiles: the use of an unspecified Alpine version. Using `alpine:latest` can lead to build inconsistencies as the underlying base image may change unexpectedly between builds.  The solution provides a more robust approach by specifying a specific Alpine version.
+
+The `Dockerfile` shows the problematic code using `alpine:latest`. The `Dockerfile.fixed` demonstrates how to fix this problem by specifying a particular version, ensuring consistent builds.
